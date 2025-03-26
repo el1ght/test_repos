@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cmake -S . -DCMAKE_OSX_ARCHITECTURES=arm64 -B ${BUILD_DIR}'
-                sh 'cmake --build ${BUILD_DIR}'
+                sh 'cmake -w --build ${BUILD_DIR}'
             }
         }
 
