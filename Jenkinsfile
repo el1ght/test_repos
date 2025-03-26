@@ -3,6 +3,7 @@ pipeline {
         docker {
             image 'conanio/gcc10'
             args '-u root'
+            customWorkspace '/tmp/jenkins'
         }
     }
 
