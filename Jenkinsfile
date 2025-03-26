@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'ams21/cmake'
+            dockerfile true
         }
     }
 
