@@ -22,7 +22,11 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'ls ./${BUILD_DIR}'
+                // List files to confirm the build output is in place
+                sh 'ls -la ./${BUILD_DIR}'
+
+                // Check if the executable exists
+                sh 'find ./${BUILD_DIR} -name "test_repos"'
                 sh './${BUILD_DIR}/test_repos --gtest_output=xml:report.xml'
             }
         }
