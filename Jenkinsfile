@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'gcc'
+            image 'kitware/cmake'
         }
     }
 
