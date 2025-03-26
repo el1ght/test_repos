@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "sort.h"
 #define STRING_MAX 512ull
-const int32_t get_str(const char const* msg, char* str, const int32_t limit)
+const int32_t get_str(const char* msg, char* str, const int32_t limit)
 {
     printf(msg);
     char c;
