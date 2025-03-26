@@ -15,8 +15,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cmake -S . -DCMAKE_OSX_ARCHITECTURES=arm64 -B ${BUILD_DIR}'
-                sh 'cmake --build ${BUILD_DIR}'
+                sh 'export CXXFLAGS="-w" && cmake -S . -DCMAKE_OSX_ARCHITECTURES=arm64 -B ${BUILD_DIR}'
+                sh 'export CXXFLAGS="-w" && cmake --build ${BUILD_DIR}'
             }
         }
 
