@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="8" failures="0" disabled="0" errors="0" timestamp="2023-05-17T18:15:10" time="0.275" name="AllTests">
+  <testsuite name="QuickSortTest" tests="5" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="SortsArrayInAscendingOrder" status="run" time="0" classname="QuickSortTest" />
+    <testcase name="SingleElementArray" status="run" time="0" classname="QuickSortTest" />
+    <testcase name="SortedArray" status="run" time="0" classname="QuickSortTest" />
+    <testcase name="ReverseSortedArray" status="run" time="0" classname="QuickSortTest" />
+    <testcase name="RandomArray" status="run" time="0" classname="QuickSortTest" />
+  </testsuite>
+  <testsuite name="StringProcessorTest" tests="2" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="ValidString_ReturnsTrue" status="run" time="0" classname="StringProcessorTest" />
+    <testcase name="InvalidString_ReturnsFalse" status="run" time="0" classname="StringProcessorTest" />
+  </testsuite>
+  <testsuite name="SwapTest" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="SwapsValuesCorrectly" status="run" time="0" classname="SwapTest" />
+  </testsuite>
+</testsuites>
