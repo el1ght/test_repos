@@ -21,6 +21,7 @@ pipeline {
 
         stage('Test') {
             steps {
+                sh 'ls ./${BUILD_DIR}'
                 sh './${BUILD_DIR}/test_repos --gtest_output=xml:report.xml'
             }
         }
