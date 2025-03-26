@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'kitware/cmake'
+            image 'ams21/cmake'
         }
     }
 
