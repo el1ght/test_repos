@@ -9,7 +9,7 @@ pipeline {
 
     environment {
         BUILD_DIR = 'build'
-        CXXFLAGS = "-Wno-duplicate-decl-specifier -Wno-write-strings -Wno-format-security"
+        CXXFLAGS = "-w"
     }
 
     stages {
